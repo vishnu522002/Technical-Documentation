@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Unity Game Engine</header>
+      <ul>
+        <li>
+            <a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#2D_Game">2D Game</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#3D_Game">3D Game</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#XR_Development">XR Development</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Animation">Animation</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Scripting">Scripting</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#Reference">Reference</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Unity is a cross-platform game engine developed by Unity Technologies, first announced and released in June 2005 at Apple Worldwide Developers Conference as a Mac OS X game engine. The engine has since been gradually extended to support a variety of desktop, mobile, console and virtual reality platforms. It is particularly popular for iOS and Android mobile game development, is considered easy to use for beginner developers, and is popular for indie game development.
+          </p>
+
+          <p>
+           The engine can be used to create three-dimensional (3D) and two-dimensional (2D) games, as well as interactive simulations and other experiences. 
+          </p>
+        <h4>Also used in:</h4> 
+          <ul>
+            <li>
+              The engine has been adopted by industries outside video gaming, such as film, automotive, architecture, engineering, construction, and the United States Armed Forces.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="2D_Game">
+        <header>2D Game</header>
+        <article>
+          <p>While Unity famous for its 3D capabilities, It can also be used to create 2D games. The familiar functions of the editor are still available but with helpful additions to simplify 2D development.</p>
+
+          <ul>
+            <li>
+              Graphic objects in 2D are known as Sprites
+. Sprites are essentially just standard textures but there are special techniques for combining and managing sprite textures for efficiency and convenience during development.
+            </li>
+            <li>Unity provides a built-in Sprite Editor to let you extract sprite graphics from a larger image. This allows you to edit a number of component images within a single texture in your image editor. You could use this, for example, to keep the arms, legs and body of a character as separate elements within one image.</li>
+            <li>
+             Unity has a separate physics engine
+ for handling 2D physics so as to make use of optimizations only available with 2D. The components correspond to the standard 3D physics components such as Rigidbody
+, Box Collider
+ and Hinge Joint
+, but with “2D” appended to the name. So, sprites can be equipped with Rigidbody 2D, Box Collider 2D and Hinge Joint 2D. Most 2D physics components are simply “flattened” versions of the 3D equivalents (eg, Box Collider 2D is a square while Box Collider is a cube) but there are a few exceptions.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="3D_Game">
+        <header>3D Game</header>
+        <article>
+          <p>
+            GameObjects
+ are fundamental objects in Unity 3D that represent characters, props, scenery, and more. Every object in your game is a GameObject.
+          </p>
+
+          <p>
+            GameObjects live in 3D environments called scenes.
+            The behavior of GameObjects is defined by blocks of functionality called components. 
+          </p>
+          <p>
+            You can attach multiple components to GameObjects. The following components are fundamental for 3D games:
+            <ul>
+              <li><span class="list-head">Transform:</span> the Transform component
+ determines the Position, Rotation, and Scale of each GameObject in the scene. Every GameObject has a Transform component.
+              </li>
+              <li><span class="list-head">Mesh Filter
+:</span> this component defines the shape of a 3D GameObject.
+              </li>
+              <li><span class="list-head">Mesh Renderer
+:</span> this component defines how the 3D shape defined by the Mesh
+ Filter looks.</li>
+              <li><span class="list-head">Cameras
+:</span> specially-configured GameObjects that capture and display the world to the player.
+              </li>
+              <li><span class="list-head">Rigidbody
+:</span> Rigidbodies allow GameObjects to interact with the Physics system, including gravity and collisions.
+              </li>
+              <li><span class="list-head">Colliders
+:</span> this component defines the shape of a 3D GameObject for the purpose of physical collisions.
+              </li>
+            </ul>
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="XR_Development">
+        <header>XR Development</header>
+        <article>
+         <p>XR is an umbrella term that includes the following types of applications:</p>
+            <ul>
+              <li><span class="list-head">Virtual Reality
+ (VR):</span> The application simulates a completely different environment around the user.
+              </li>
+              <li><span class="list-head">Mixed Reality (MR):</span> The application combines its own environment with the user’s real-world environment and allows them to interact with each other.
+              </li>
+              <li><span class="list-head">Augmented Reality (AR):</span> The application layers content over a digital view of the real world.
+              </li>
+            </ul>
+        </article>
+      </section>
+      
+      <section class="main-section" id="Animation">
+        <header>Animation</header>
+        <p>
+          Unity’s Animation features include retargetable animations, full control of animation weights at runtime, event calling from within the animation playback, sophisticated state machine
+ hierarchies and transitions, blend shapes for facial animations, and much more.
+        </p>
+        <p>
+         Unity’s animation system is based on the concept of Animation Clips
+, which contain information about how certain objects should change their position, rotation, or other properties over time. Each clip can be thought of as a single linear recording. Animation clips from external sources are created by artists or animators with 3rd party tools such as Autodesk® 3ds Max® or Autodesk® Maya®, or come from motion capture studios or other sources.
+        </p>
+        <p>
+         Animation Clips are then organised into a structured flowchart-like system called an Animator Controller
+. The Animator Controller acts as a “State Machine
+” which keeps track of which clip should currently be playing, and when the animations should change or blend together.
+        </p>
+      </section>
+
+ <section class="main-section" id="Scripting">
+        <header>Scripting</header>
+          <article>
+            <p>The behavior of GameObjects
+ is controlled by the Components
+ that are attached to them. Although Unity’s built-in Components can be very versatile, you will soon find you need to go beyond what they can provide to implement your own gameplay features. Unity allows you to create your own Components using scripts. These allow you to trigger game events, modify Component properties over time and respond to user input in any way you like.</p>
+
+            <p>Unity supports the C# programming language natively. C# (pronounced C-sharp) is an industry-standard language similar to Java or C++.</p>
+            
+            <div>Example code:<code>
+  using UnityEngine;
+  using System.Collections;
+  public class NewBehaviourScript
+  { 
+    // Use this for initialization
+    void Start () 
+    {
+    
+    }
+    // Update is called once per frame
+    void Update () 
+    {
+    
+    }
+}</code></div>    
+          </article>
+      </section>
+
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+         <p>All the documentation in this page is taken from</p>
+          <ul>
+            <li>
+              <a
+                href="https://docs.unity3d.com/Manual/index.html"
+                target="_blank"
+                >Unity Docs</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Unity_(game_engine)"
+                target="_blank"
+                >Wikipedia</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
